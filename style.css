@@ -2,13 +2,14 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Roboto Condensed', sans-serif;
-    height: 2274px;
+    height: 1vh;
     margin: 0;
 }
 .container{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: fit-content;
 }
 header{
     display: flex;
@@ -66,14 +67,10 @@ main{
     display: flex;
     flex-direction: column;
     align-content: center;
-    height: 2048px;
-}
-.section1, .section2{
-    width: 100%;
-    height: 50%;
+    height: 100%;
 }
 .section1{
-    height: max-content;
+    height: fit-content;
     margin-top: 110px;
     display: flex;
     justify-content: center;
@@ -94,13 +91,41 @@ main{
     justify-content: end;
     color: #716565;
     width: 30%;
-    font-size: 300%;
+    font-size: 4em;
     margin: 10px;
     text-align: center;
 }
 .section2{
-    background-color: #506FA9;
-    ;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(8, 48, 124, 0.7);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.textodiv2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    height: fit-content;
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+.texto-interno{
+    margin-left: 20%;
+}
+.fita2{
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    height: 100%;
+}
+.fita2img{
+    width: 100%;
+    height: 100%;
 }
 footer{
     height: 226px;
@@ -140,6 +165,10 @@ footer{
     }
     .section1{
         flex-direction: column;
+        font-size: 70%;
+    }
+    .paragrafo-div1{
+        width: 100%;
     }
     .desktop{
         display: none;
@@ -154,6 +183,28 @@ footer{
         align-items: center;
         list-style: none;
         color: #846219;
+    }
+    .section2{
+        flex-direction: column;
+    }
+    .texto-interno{
+        margin-left: 0;
+        width: 75%;
+    }
+    .textodiv2{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 2em;
+    }
+    .fita2{
+        width: 100%;
+    }
+    .texto-interno h2{
+        font-size: 1em
+    }
+    .texto-interno p {
+        font-size: 0.7em;
     }
 }
 @keyframes aparecer {
