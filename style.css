@@ -1,0 +1,166 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 2274px;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+}
+.indentificator-company{
+    display: flex;
+    width: max-content;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    color: #846219;
+
+}
+.extensive-name{
+    padding: 5px;
+    text-align: center;
+}
+h1, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.desktop{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    color: #846219;
+
+}
+.desktop ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.desktop li{
+    padding: 5%;
+    width: max-content;
+}
+li:hover{
+    background-color: #E9E9E9;
+}
+button{
+    display: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 2048px;
+}
+.section1, .section2{
+    width: 100%;
+    height: 50%;
+}
+.section1{
+    height: max-content;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E9E9;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 10px;
+}
+.fita-1{
+    width: 100%;
+}
+.paragrafo-div1{
+    display: flex;
+    justify-content: end;
+    color: #716565;
+    width: 30%;
+    font-size: 300%;
+    margin: 10px;
+    text-align: center;
+}
+.section2{
+    background-color: #506FA9;
+    ;
+}
+footer{
+    height: 226px;
+    background-color: #E9E9E9;
+}
+@media only screen and (max-width: 744px){
+    header{
+        flex-direction: column;
+        height: max-content;
+    }
+    .extensive-name{
+        display: none;
+    }
+    .indentificator-company{
+        width: 100%;
+        justify-content: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin: 10px;
+    }
+    button{
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+    .responsive{
+        display: flex;
+        justify-content: start;
+        width: 40%;
+    }
+    .responsive2{
+        display: flex;
+        justify-content: start;
+        width: 60%;
+        padding-left: 7%;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .desktop{
+        display: none;
+        justify-content: center;
+        height: 0;
+        width: 100%;
+        animation: aparecer 1s linear;
+    }
+    .desktop ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        color: #846219;
+    }
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
