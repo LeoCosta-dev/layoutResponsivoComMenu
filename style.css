@@ -182,6 +182,7 @@ footer{
     }
     .paragrafo-div1{
         width: 100%;
+        justify-content: center;
     }
     .desktop{
         display: none;
