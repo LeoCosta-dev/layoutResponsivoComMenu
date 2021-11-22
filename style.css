@@ -128,8 +128,21 @@ main{
     height: 100%;
 }
 footer{
-    height: 226px;
+    display: flex;
+    height: fit-content;
     background-color: #E9E9E9;
+}
+.contatos{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 4%;
+    color: #716565;
+}
+.local{
+    margin: 4%;
+    width: 20%;
+    color: #716565;
 }
 @media only screen and (max-width: 744px){
     header{
@@ -205,6 +218,11 @@ footer{
     }
     .texto-interno p {
         font-size: 0.7em;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 }
 @keyframes aparecer {
